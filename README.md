@@ -68,17 +68,15 @@ PORT=8080 node .output/server/index.mjs
 
 ### Docker 部署
 
-```dockerfile
-# Dockerfile
-FROM node:20-alpine
-WORKDIR /app
-COPY . .
-RUN corepack enable && pnpm install --frozen-lockfile
-RUN pnpm build
-ENV PORT=3000
-EXPOSE 3000
-CMD ["node", ".output/server/index.mjs"]
+```bash
+# 拉取并运行
+docker run -d -p 3000:3000 --name pal-dash adelenamann/palworld-dashboard:latest
+
+# 自定义端口
+docker run -d -p 8080:8080 -e PORT=8080 --name pal-dash adelenamann/palworld-dashboard:latest
 ```
+
+也可以从源码构建：
 
 ```bash
 docker build -t palworld-dashboard .
