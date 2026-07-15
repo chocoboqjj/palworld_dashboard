@@ -1,0 +1,28 @@
+{
+  "name": "palworld-dashboard",
+  "version": "0.0.1",
+  "description": "幻兽帕鲁 (Palworld) 服务器监控与管理面板 (Nuxt 4 + Vue 3)",
+  "author": "AdeleNaumann",
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@10.12.0",
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs",
+    "preview": "nuxt preview",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "lucide-vue-next": "^1.0.0",
+    "nuxt": "^4"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.13",
+    "@types/node": "^20",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
