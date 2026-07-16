@@ -2,7 +2,7 @@
   "name": "palworld-dashboard",
   "version": "0.0.1",
   "description": "幻兽帕鲁 (Palworld) 服务器监控与管理面板 (Nuxt 4 + Vue 3)",
-  "author": "AdeleNaumann",
+  "author": "chocoboqjj",
   "license": "MIT",
   "type": "module",
   "packageManager": "pnpm@10.12.0",
