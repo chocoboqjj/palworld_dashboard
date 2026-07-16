@@ -87,7 +87,7 @@ docker run -d -p 3000:3000 --name pal-dash palworld-dashboard
 
 启动后浏览器访问 `http://<宿主机IP>:3000`，在**连接设置**中填写：
 
-- **服务器地址**：如 `http://192.168.1.100:8211`（游戏服务器的 `RESTAPIPort`）
+- **服务器地址**：如 `http://192.168.1.100:8212`（游戏服务器的 `RESTAPIPort`）
 - **用户名**：`admin`（Palworld REST API 固定用户名）
 - **密码**：游戏服务器 `AdminPassword`
 
