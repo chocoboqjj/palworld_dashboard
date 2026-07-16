@@ -1,5 +1,17 @@
 # 幻兽帕鲁 监控面板 (Palworld Dashboard)
 
+# 🚨 重要警告 —— 请勿公网暴露！！
+
+```diff
+- Palworld REST API 不具备公网安全防护能力。若面板被公网访问，
+- 攻击者可能通过 /shutdown、/stop、/kick、/ban 等接口
+- 恶意操作你的游戏服务器，造成玩家被踢、数据丢失、服务器被强制关闭。
+- 
+- 本项目不对因公网暴露导致的任何损失承担责任。请仅在局域网或 VPN 内部署。
+```
+
+---
+
 基于 **Palworld 官方 REST API v1.0.0** 构建的服务器监控与管理面板。
 前端使用 **Nuxt 4 + Vue 3 + Tailwind CSS**，
 后端代理通过 Nuxt Nitro Server Routes 实现（零额外后端依赖）。
